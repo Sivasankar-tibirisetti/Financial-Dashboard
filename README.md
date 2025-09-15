@@ -31,3 +31,22 @@ visit : http://localhost:3000/
 
 A responsive financial dashboard built with **Next.js (App Router)** and **Tailwind CSS**.  
 Includes mock API routes, charts, and dark mode.
+
+--------Capacitor Android / iOS-------
+
+1.Clone the repository
+
+Sync Capacitor platforms:
+
+npx cap sync android
+npx cap sync ios
+npx cap open android\iOS
+
+
+-----Open in IDE:-------
+
+npx cap open android   # Android Studio
+npx cap open ios       # Xcode (Mac only)
+
+## Finally build amd run the emulator.
+
