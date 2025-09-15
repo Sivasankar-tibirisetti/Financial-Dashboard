@@ -40,7 +40,7 @@ Sync Capacitor platforms:
 
 npx cap sync android
 npx cap sync ios
-npx cap open android\iOS
+
 
 
 -----Open in IDE:-------
