@@ -1,0 +1,52 @@
+{
+  "points": [
+    {
+      "x": 375,
+      "y": 44,
+      "size": 59,
+      "name": "Summary 1"
+    },
+    {
+      "x": 71,
+      "y": 211,
+      "size": 41,
+      "name": "Summary 2"
+    },
+    {
+      "x": 354,
+      "y": 83,
+      "size": 10,
+      "name": "Summary 3"
+    },
+    {
+      "x": 179,
+      "y": 182,
+      "size": 11,
+      "name": "Summary 4"
+    },
+    {
+      "x": 239,
+      "y": 244,
+      "size": 35,
+      "name": "Summary 5"
+    },
+    {
+      "x": 222,
+      "y": 95,
+      "size": 49,
+      "name": "Summary 6"
+    },
+    {
+      "x": 164,
+      "y": 163,
+      "size": 23,
+      "name": "Summary 7"
+    },
+    {
+      "x": 249,
+      "y": 86,
+      "size": 31,
+      "name": "Summary 8"
+    }
+  ]
+}

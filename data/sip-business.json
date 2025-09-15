@@ -1,0 +1,14 @@
+{
+  "points": [
+    { "label": "Day 1", "bar": 195, "line": 53 },
+    { "label": "Day 2", "bar": 105, "line": 36 },
+    { "label": "Day 3", "bar": 123, "line": 59 },
+    { "label": "Day 4", "bar": 158, "line": 24 },
+    { "label": "Day 5", "bar": 87, "line": 32 },
+    { "label": "Day 6", "bar": 211, "line": 58 },
+    { "label": "Day 7", "bar": 113, "line": 36 },
+    { "label": "Day 8", "bar": 202, "line": 39 },
+    { "label": "Day 9", "bar": 182, "line": 30 },
+    { "label": "Day 10", "bar": 232, "line": 13 }
+  ]
+}

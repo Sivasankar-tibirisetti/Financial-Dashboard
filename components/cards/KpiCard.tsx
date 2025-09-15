@@ -11,7 +11,7 @@ export default function KpiCard({ title, value, mom }: { title: string; value: s
           {pos ? '▲' : '▼'} {Math.abs(mom).toFixed(2)}%
         </span>
       </div>
-      <div className="mt-4">npm run dev
+      <div className="mt-4">
         
         <Link href="#" className="inline-block px-3 py-1 rounded-lg border text-sm hover:bg-black/5 dark:hover:bg-white/5">View Report</Link>
       </div>

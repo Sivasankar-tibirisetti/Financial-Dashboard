@@ -1,0 +1,112 @@
+{
+  "points": [
+    {
+      "x": 280,
+      "y": 250,
+      "size": 41,
+      "name": "Client 1"
+    },
+    {
+      "x": 256,
+      "y": 86,
+      "size": 17,
+      "name": "Client 2"
+    },
+    {
+      "x": 293,
+      "y": 179,
+      "size": 47,
+      "name": "Client 3"
+    },
+    {
+      "x": 130,
+      "y": 86,
+      "size": 56,
+      "name": "Client 4"
+    },
+    {
+      "x": 381,
+      "y": 84,
+      "size": 39,
+      "name": "Client 5"
+    },
+    {
+      "x": 276,
+      "y": 162,
+      "size": 34,
+      "name": "Client 6"
+    },
+    {
+      "x": 369,
+      "y": 145,
+      "size": 25,
+      "name": "Client 7"
+    },
+    {
+      "x": 169,
+      "y": 249,
+      "size": 42,
+      "name": "Client 8"
+    },
+    {
+      "x": 325,
+      "y": 165,
+      "size": 53,
+      "name": "Client 9"
+    },
+    {
+      "x": 213,
+      "y": 78,
+      "size": 34,
+      "name": "Client 10"
+    },
+    {
+      "x": 240,
+      "y": 247,
+      "size": 26,
+      "name": "Client 11"
+    },
+    {
+      "x": 59,
+      "y": 234,
+      "size": 20,
+      "name": "Client 12"
+    },
+    {
+      "x": 351,
+      "y": 195,
+      "size": 42,
+      "name": "Client 13"
+    },
+    {
+      "x": 109,
+      "y": 148,
+      "size": 26,
+      "name": "Client 14"
+    },
+    {
+      "x": 367,
+      "y": 137,
+      "size": 15,
+      "name": "Client 15"
+    },
+    {
+      "x": 395,
+      "y": 149,
+      "size": 16,
+      "name": "Client 16"
+    },
+    {
+      "x": 282,
+      "y": 65,
+      "size": 36,
+      "name": "Client 17"
+    },
+    {
+      "x": 254,
+      "y": 173,
+      "size": 51,
+      "name": "Client 18"
+    }
+  ]
+}

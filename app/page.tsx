@@ -9,6 +9,10 @@ import ClientsBubble from "@/components/charts/ClientsBubble";
 import SipBusiness from "@/components/charts/SipBusiness";
 import MonthlyMIS from "@/components/charts/MonthlyMIS";
 
+import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
+import { Toast } from '@capacitor/toast';
+import { Capacitor } from "@capacitor/core";
+
 type RangeKey = "3d" | "7d" | "10d" | "30d";
 
 export default function Page() {
@@ -71,6 +75,7 @@ export default function Page() {
         break;
     }
   };
+
 
 const generatePDF = async () => {
   try {
@@ -209,14 +214,49 @@ doc.setFillColor(239, 68, 68);
 doc.rect(legendX, legendY + 31, boxSize, boxSize, "F");
 doc.text("Other Stats / Red", legendX + boxSize+4, legendY + 36);
 
-    // --- Save PDF ---
-    doc.save("financial_dashboard.pdf");
-  } catch (error) {
+
+   // --- Save PDF ---
+   //mobile
+ // --- Save PDF ---
+if (Capacitor.isNativePlatform()) {
+  // Mobile / Capacitor environment
+  const pdfBlob = doc.output("blob");
+  const reader = new FileReader();
+  reader.onload = async () => {
+    const base64 = (reader.result as string).split(",")[1];
+
+    await Filesystem.writeFile({
+      path: "financial_dashboard.pdf",
+      data: base64,
+      directory: Directory.Documents,
+    });
+
+    await Toast.show({
+      text: "PDF saved to Documents folder!",
+      duration: "long",
+    });
+  };
+  reader.readAsDataURL(pdfBlob);
+} else {
+  // Browser fallback
+  const pdfBlob = doc.output("blob");
+  const url = URL.createObjectURL(pdfBlob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "filename"; // filename
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+
+  URL.revokeObjectURL(url);
+}
+
+} catch (error) {
     console.error("PDF generation failed:", error);
   }
 };
-
-
   return (
     <div style={{ padding: "20px" }}>
       <h1>Financial Dashboard</h1>

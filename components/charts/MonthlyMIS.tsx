@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 import type { RangeKey } from '@/lib/utils'
+import monthlyMISjson from '@/data/mis.json'
+
 
 type Row = { month: string; aum: number; sip: number; redemption: number }
 
@@ -11,11 +13,10 @@ export default function MonthlyMIS({ range }: { range: RangeKey }) {
 
   useEffect(() => {
     setLoading(true)
-    fetch(`/api/mis?range=${range}`).then(r => r.json()).then(d => {
-      setData(d.rows)
+      setData(monthlyMISjson.points)
       setLoading(false)
-    })
-  }, [range])
+    }, [])
+
 
   return (
     <div className="card p-4 h-80">

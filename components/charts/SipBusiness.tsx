@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react'
 import { ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 import type { RangeKey } from '@/lib/utils'
+import sipbusinessJSON from '@/data/sip-business.json'
+
 
 type Row = { label: string; bar: number; line: number }
 
@@ -11,11 +13,10 @@ export default function SipBusiness({ range }: { range: RangeKey }) {
 
   useEffect(() => {
     setLoading(true)
-    fetch(`/api/sip-business?range=${range}`).then(r => r.json()).then(d => {
-      setData(d.rows)
+     const rows: Row[] = sipbusinessJSON.points
+   setData(rows)
       setLoading(false)
-    })
-  }, [range])
+    },[])
 
   return (
     <div className="card p-4 h-80">

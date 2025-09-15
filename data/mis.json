@@ -1,0 +1,17 @@
+
+  {
+  "points": [
+    { "month": "Jan", "aum": 181, "sip": 97, "redemption": 22 },
+    { "month": "Feb", "aum": 225, "sip": 221, "redemption": 56 },
+    { "month": "Mar", "aum": 313, "sip": 52, "redemption": 40 },
+    { "month": "Apr", "aum": 91, "sip": 122, "redemption": 44 },
+    { "month": "May", "aum": 313, "sip": 186, "redemption": 23 },
+    { "month": "Jun", "aum": 117, "sip": 252, "redemption": 46 },
+    { "month": "Jul", "aum": 282, "sip": 102, "redemption": 52 },
+    { "month": "Aug", "aum": 88, "sip": 45, "redemption": 59 },
+    { "month": "Sep", "aum": 237, "sip": 93, "redemption": 27 },
+    { "month": "Oct", "aum": 248, "sip": 159, "redemption": 40 },
+    { "month": "Nov", "aum": 241, "sip": 108, "redemption": 23 },
+    { "month": "Dec", "aum": 136, "sip": 185, "redemption": 17 }
+  ]
+}
