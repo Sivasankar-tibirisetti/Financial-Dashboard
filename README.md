@@ -102,5 +102,5 @@ npx cap open ios       # Xcode (Mac only)
 ##select the emulator what we have to launch from device manager
 ## Finally build and run the emulator.
 ## make sure run the project on browser of http://localhost:3000/ before run an emulator.
-) 
+
 
